@@ -1,56 +1,119 @@
-## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- hey there
+## intent:affirm
+- yes
+- yep
+- yeah
+- indeed
+- that's right
+- ok
+- great
+- right, thank you
+- correct
+- great choice
+- sounds really good
+- thanks
 
 ## intent:goodbye
 - bye
 - goodbye
-- see you around
-- see you later
+- good bye
+- stop
+- end
+- farewell
+- Bye bye
+- have a good one
 
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
+## intent:greet
+- hey
+- howdy
+- hey there
+- hello
+- hi
+- good morning
+- good evening
+- dear sir
+- hi
+- hi
+- hello
 
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
+## intent:restaurant_search
+- i'm looking for a place to eat
+- I want to grab lunch
+- I am searching for a dinner spot
+- I am looking for some restaurants in [Delhi](location).
+- I am looking for some restaurants in [Bangalore](location)
+- show me [chinese](cuisine) restaurants
+- show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
+- show me a [mexican](cuisine) place in the [centre](location)
+- i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
+- search for restaurants
+- anywhere in the [west](location)
+- I am looking for [asian fusion](cuisine) food
+- I am looking a restaurant in [294328](location)
+- in [Gurgaon](location)
+- [South Indian](cuisine)
+- [North Indian](cuisine)
+- [Italian](cuisine)
+- [Chinese](cuisine:chinese)
+- [chinese](cuisine)
+- [Lithuania](location)
+- Oh, sorry, in [Italy](location)
+- in [delhi](location)
+- I am looking for some restaurants in [Mumbai](location)
+- I am looking for [mexican indian fusion](cuisine)
+- can you book a table in [rome](location) in a [moderate](price:mid) price range with [british](cuisine) food for [four](people:4) people
+- [central](location) [indian](cuisine) restaurant
+- please help me to find restaurants in [pune](location)
+- Please find me a restaurantin [bangalore](location)
+- [mumbai](location)
+- [Chinese](cuisine:chinese)
+- show me restaurants
+- [mumbai](location)
+- [Italian](cuisine)
+- please find me [chinese](cuisine) restaurant in [delhi](location)
+- can you find me a [chinese](cuisine) restaurant
+- [delhi](location)
+- please find me a restaurant in [ahmedabad](location)
+- please show me a few [italian](cuisine) restaurants in [bangalore](location)
+- [less than 300](price:low)
+- [300-700](price:mid) range
+- [greater than 700](price:high)
+- [moderate](price:mid) price range
+- can you show me some [cheap](price:low) places to eat
+- [>700](price:high)
+- [<700](price:mid)
+- [<300](price:low)
+- [>300](price:mid)
+- [in range of 300 to 700](price:mid)
+- [not more than 300](price:low)
+- [not more than 700](price:mid)
+- [mid](price:mid)
+- [low](price:low)
+- [high](price:high)
 
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
+## synonym:4
+- four
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+## synonym:Delhi
+- New Delhi
 
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
+## synonym:bangalore
+- Bengaluru
+
+## synonym:chinese
+- chines
+- Chinese
+- Chines
+
+## synonym:mid
+- moderate
+- average
+
+## synonym:vegetarian
+- veggie
+- vegg
+
+## regex:greet
+- hey[^\s]*
+
+## regex:pincode
+- [0-9]{6}

@@ -1,31 +1,91 @@
-## happy path
+## complete path
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"price": "<300"}
+    - slot{"price": "low"}  
+    - action_search_restaurants
+    - utter_goodbye
+    - export
 
-## sad path 1
+## location specified
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_greet
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_budget
+* restaurant_search{"price": ">700"}
+    - slot{"price": "high"}
+    - action_search_restaurants
 * affirm
-  - utter_happy
+    - utter_goodbye
+    - export
 
-## sad path 2
+## complete path 2
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "North Indian"}
+    - slot{"cuisine": "North Indian"}
+* restaurant_search{"price": "300 to 700"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - utter_goodbye
 
-## say goodbye
+## complete path 3
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "italy"}
+    - slot{"location": "italy"}
+	- utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+* restaurant_search{"price": "not more than 300"}
+    - slot{"price": "low"}
+    - action_search_restaurants
 * goodbye
-  - utter_goodbye
+    - utter_goodbye
 
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+## complete path 4
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+* restaurant_search{"price": "not more than 700"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "delhi"}
+    - export
+    
+## happy_path
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian", "location": "mumbai", "price": "300 to 500"}
+    - slot{"cuisine": "italian"}
+    - slot{"location": "mumbai"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "mumbai"}
+* affirm
+    - utter_goodbye
