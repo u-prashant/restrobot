@@ -1,22 +1,45 @@
-intents:
-- affirm
-- restaurant_search
-- greet
-- goodbye
-- stop
+actions:
+- action_search_restaurants
+- ok
+- utter_ask_budget
+- utter_ask_cuisine
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_askmail
+- utter_default
+- utter_goodbye
+- utter_greet
 entities:
 - cuisine
 - location
-- price
 - people
+- price
+intents:
+- greet
+- stop
+- goodbye
+- affirm
+- restaurant_search
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
 slots:
   cuisine:
     type: text
   location:
     type: text
   price:
-    type: float
+    type: text
 templates:
+  utter_ask_budget:
+  - buttons:
+    - payload: low
+      title: Lesser than Rs. 300
+    - payload: mid
+      title: Rs. 300 to 700
+    - payload: high
+      title: More than 700
+    text: What's the average budget for two people?
   utter_ask_cuisine:
   - buttons:
     - payload: Chinese
@@ -32,6 +55,8 @@ templates:
   - text: how can I help you?
   utter_ask_location:
   - text: In what location?
+  utter_askmail:
+  - text: Do you want the list over mail?
   utter_default:
   - text: i cannot understand
   utter_goodbye:
@@ -41,21 +66,3 @@ templates:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
-  utter_ask_budget:
-  - buttons:
-    - payload: low
-      title: Lesser than Rs. 300
-    - payload: mid
-      title: Rs. 300 to 700
-    - payload: high
-      title: More than 700
-    text: What's the average budget for two people?
-actions:
-- action_search_restaurants
-- utter_ask_cuisine
-- utter_ask_howcanhelp
-- utter_ask_location
-- utter_default
-- utter_goodbye
-- utter_greet
-- utter_ask_budget

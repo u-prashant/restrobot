@@ -12,6 +12,12 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
+    - utter_ask_mail
+* affirm
+    - utter_ask_email_id
+* email_id{"email_id": abc@xyz.com}
+    - slot{"email_id": abc@xyz.com}
+    - action_send_email
     - utter_goodbye
     - export
 
@@ -74,6 +80,22 @@
     - slot{"cuisine": "chinese"}
 * restaurant_search{"price": "not more than 700"}
     - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "delhi"}
+    - export
+    
+## complete path 5
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+* restaurant_search{"price": "more than 700"}
+    - slot{"price": "high"}
     - action_search_restaurants
     - slot{"location": "delhi"}
     - export

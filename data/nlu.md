@@ -10,6 +10,7 @@
 - correct
 - great choice
 - sounds really good
+- sounds good
 - thanks
 
 ## intent:goodbye
@@ -27,24 +28,24 @@
 - howdy
 - hey there
 - hello
+- hello there
 - hi
+- hi there
 - good morning
 - good evening
 - dear sir
-- hi
-- hi
-- hello
 
 ## intent:restaurant_search
 - i'm looking for a place to eat
 - I want to grab lunch
+- I need to have food
 - I am searching for a dinner spot
 - I am looking for some restaurants in [Delhi](location).
 - I am looking for some restaurants in [Bangalore](location)
 - show me [chinese](cuisine) restaurants
 - show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
 - show me a [mexican](cuisine) place in the [centre](location)
-- i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
+- i am looking for an [indian](cuisine)
 - search for restaurants
 - anywhere in the [west](location)
 - I am looking for [asian fusion](cuisine) food
@@ -65,10 +66,7 @@
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurantin [bangalore](location)
 - [mumbai](location)
-- [Chinese](cuisine:chinese)
 - show me restaurants
-- [mumbai](location)
-- [Italian](cuisine)
 - please find me [chinese](cuisine) restaurant in [delhi](location)
 - can you find me a [chinese](cuisine) restaurant
 - [delhi](location)
@@ -86,9 +84,18 @@
 - [in range of 300 to 700](price:mid)
 - [not more than 300](price:low)
 - [not more than 700](price:mid)
-- [mid](price:mid)
-- [low](price:low)
-- [high](price:high)
+- [mid](price)
+- [low](price)
+- [high](price)
+- I need food
+- [Delhi](location)
+- in need food
+- [delhi](location)
+- [Italian](cuisine)
+- [mid](price)
+
+## intent:stop
+- bye
 
 ## synonym:4
 - four
@@ -104,8 +111,23 @@
 - Chinese
 - Chines
 
+## synonym:high
+- greater than 700
+- >700
+
+## synonym:low
+- less than 300
+- cheap
+- <300
+- not more than 300
+
 ## synonym:mid
 - moderate
+- 300-700
+- <700
+- >300
+- in range of 300 to 700
+- not more than 700
 - average
 
 ## synonym:vegetarian
