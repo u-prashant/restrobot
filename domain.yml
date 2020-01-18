@@ -1,11 +1,12 @@
 actions:
 - action_search_restaurants
-- ok
+- action_send_email
 - utter_ask_budget
 - utter_ask_cuisine
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_askmail
+- utter_ask_email_id
 - utter_default
 - utter_goodbye
 - utter_greet
@@ -61,6 +62,8 @@ templates:
   - text: In what location?
   utter_askmail:
   - text: Do you want the list over mail?
+  utter_ask_email_id:
+  - text: Please provide a valid email id
   utter_default:
   - text: i cannot understand
   utter_goodbye:

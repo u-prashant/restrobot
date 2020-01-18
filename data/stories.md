@@ -12,13 +12,13 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path with email 1
@@ -35,13 +35,13 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
 
     ## complete path with email 2
@@ -58,13 +58,13 @@
 * restaurant_search{"price": ">700"}
     - slot{"price": "high"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
 
     ## complete path with email 3
@@ -81,13 +81,13 @@
 * restaurant_search{"price": "300 to 700"}
     - slot{"price": "mid"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path without email 
@@ -104,7 +104,7 @@
 * restaurant_search{"price": "300 to 700"}
     - slot{"price": "mid"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path without email 1
@@ -121,7 +121,7 @@
 * restaurant_search{"price": ">700"}
     - slot{"price": "high"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path with email 2
@@ -138,7 +138,7 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export
     
 ## complete path without email 3
@@ -155,7 +155,7 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export 
 
 ## complete path with email without greet
@@ -172,13 +172,13 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path with email 1 without greet
@@ -193,13 +193,13 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
 
     ## complete path with email 2 without greet
@@ -214,13 +214,13 @@
 * restaurant_search{"price": ">700"}
     - slot{"price": "high"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
 
     ## complete path with email 3 without greet
@@ -235,13 +235,13 @@
 * restaurant_search{"price": "300 to 700"}
     - slot{"price": "mid"}  
     - action_search_restaurants
-    - utter_ask_mail
+    - utter_askmail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": abc@xyz.com}
-    - slot{"email_id": abc@xyz.com}
+* email_id{"email_id": "abc@xyz.com"}
+    - slot{"email_id": "abc@xyz.com"}
     - action_send_email
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path without email without greet
@@ -256,7 +256,7 @@
 * restaurant_search{"price": "300 to 700"}
     - slot{"price": "mid"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path without email 1 without greet
@@ -271,7 +271,7 @@
 * restaurant_search{"price": ">700"}
     - slot{"price": "high"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export
     
     ## complete path with email 2 without greet
@@ -286,7 +286,7 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export
     
 ## complete path without email 3 without greet
@@ -301,7 +301,7 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_goodby
+    - utter_goodbye
     - export 
 
     
