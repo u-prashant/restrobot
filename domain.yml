@@ -15,7 +15,7 @@ slots:
   location:
     type: text
   price:
-    type: float
+    type: text
 templates:
   utter_ask_cuisine:
   - buttons:
@@ -56,6 +56,7 @@ templates:
     text: What's the average budget for two people?
 actions:
 - action_search_restaurants
+- action_send_mail
 - utter_ask_cuisine
 - utter_ask_howcanhelp
 - utter_ask_location

@@ -75,8 +75,7 @@
 * restaurant_search{"price": "not more than 700"}
     - slot{"price": "mid"}
     - action_search_restaurants
-    - slot{"location": "delhi"}
-    - export
+    - utter_goodbye
     
 ## happy_path
 * greet
