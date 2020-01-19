@@ -75,7 +75,7 @@ class ActionSendMail(Action):
         loc = tracker.get_slot('location')
         cuisine = tracker.get_slot('cuisine')
         price = tracker.get_slot('price')
-        email = tracker.get_slot('mail')
+        email = tracker.get_slot('email')
         location_detail = zomato.get_location(loc, 1)
         d1 = json.loads(location_detail)
         lat = d1["location_suggestions"][0]["latitude"]

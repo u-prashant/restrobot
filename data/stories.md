@@ -6,22 +6,22 @@
 * restaurant_search{"location": "delhi"}
     - slot{"location": "delhi"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
+* restaurant_search{"cuisine": "Chinese"}
+    - slot{"cuisine": "Chinese"}
     - utter_ask_budget
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@gmail.com"}
+    - slot{"email": "abc@gmail.com"}
+    - action_send_mail
     - utter_goodbye
     - export
     
-    ## complete path with email 1
+## complete path with email 1
 * greet
     - utter_greet
 * restaurant_search
@@ -30,21 +30,21 @@
     - slot{"location": "bangalore"}
     - utter_ask_cuisine
 * restaurant_search{"cuisine": "North Indian"}
-    - slot{"cuisine": "chinese"}
+    - slot{"cuisine": "North Indian"}
     - utter_ask_budget
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
 
-    ## complete path with email 2
+## complete path with email 2
 * greet
     - utter_greet
 * restaurant_search
@@ -58,16 +58,16 @@
 * restaurant_search{"price": ">700"}
     - slot{"price": "high"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
 
-    ## complete path with email 3
+## complete path with email 3
 * greet
     - utter_greet
 * restaurant_search
@@ -81,16 +81,16 @@
 * restaurant_search{"price": "300 to 700"}
     - slot{"price": "mid"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
     
-    ## complete path without email 
+## complete path without email 
 * greet
     - utter_greet
 * restaurant_search
@@ -107,7 +107,7 @@
     - utter_goodbye
     - export
     
-    ## complete path without email 1
+## complete path without email 1
 * greet
     - utter_greet
 * restaurant_search
@@ -124,7 +124,7 @@
     - utter_goodbye
     - export
     
-    ## complete path with email 2
+## complete path with email 2
 * greet
     - utter_greet
 * restaurant_search
@@ -172,16 +172,16 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
     
-    ## complete path with email 1 without greet
+## complete path with email 1 without greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "bangalore"}
@@ -193,16 +193,16 @@
 * restaurant_search{"price": "<300"}
     - slot{"price": "low"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
 
-    ## complete path with email 2 without greet
+## complete path with email 2 without greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "Mumbai"}
@@ -214,16 +214,16 @@
 * restaurant_search{"price": ">700"}
     - slot{"price": "high"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
 
-    ## complete path with email 3 without greet
+## complete path with email 3 without greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "Hyderabad"}
@@ -235,16 +235,16 @@
 * restaurant_search{"price": "300 to 700"}
     - slot{"price": "mid"}  
     - action_search_restaurants
-    - utter_askmail
+    - utter_ask_mail
 * affirm
     - utter_ask_email_id
-* email_id{"email_id": "abc@xyz.com"}
-    - slot{"email_id": "abc@xyz.com"}
-    - action_send_email
+* email_id{"email": "abc@xyz.com"}
+    - slot{"email": "abc@xyz.com"}
+    - action_send_mail
     - utter_goodbye
     - export
     
-    ## complete path without email without greet
+## complete path without email without greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "Hyderabad"}
@@ -259,7 +259,7 @@
     - utter_goodbye
     - export
     
-    ## complete path without email 1 without greet
+## complete path without email 1 without greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "Mumbai"}
@@ -274,7 +274,7 @@
     - utter_goodbye
     - export
     
-    ## complete path with email 2 without greet
+## complete path with email 2 without greet
 * restaurant_search
     - utter_ask_location
 * restaurant_search{"location": "bangalore"}
@@ -393,4 +393,28 @@
     - action_search_restaurants
     - slot{"location": "mumbai"}
 * affirm
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "South Indian"}
+    - slot{"cuisine": "South Indian"}
+    - utter_ask_budget
+* restaurant_search{"price": "high"}
+    - slot{"price": "high"}
+    - action_search_restaurants
+    - slot{"location": "delhi"}
+    - utter_ask_mail
+* affirm
+    - utter_ask_email_id
+* email_id{"email": "prasad.arun88@gmail.com"}
+    - slot{"email": "prasad.arun88@gmail.com"}
+    - action_send_mail
+    - slot{"location": "delhi"}
     - utter_goodbye

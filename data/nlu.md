@@ -90,9 +90,16 @@
 - I need food
 - [Delhi](location)
 - in need food
+- i'm hungry
 - [delhi](location)
-- [Italian](cuisine)
-- [mid](price)
+- [South Indian](cuisine)
+- [high](price)
+
+## intent:email_id
+- [email](email)
+- my email id is [email](email)
+- email - [email](email)
+- [prasad.arun88@gmail.com](email)
 
 ## intent:stop
 - bye
@@ -133,6 +140,9 @@
 ## synonym:vegetarian
 - veggie
 - vegg
+
+## regex:email
+- (b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b)
 
 ## regex:greet
 - hey[^\s]*
