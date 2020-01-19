@@ -12,6 +12,8 @@
 - sounds really good
 - sounds good
 - thanks
+- yes, please
+- yes. Please
 
 ## intent:deny
 - no
@@ -22,6 +24,8 @@
 - don't send email
 - not needed
 - no need
+- no, i don't want
+- no thanks
 
 ## intent:goodbye
 - bye
@@ -44,6 +48,8 @@
 - good morning
 - good evening
 - dear sir
+- hola
+- hello!
 
 ## intent:restaurant_search
 - i'm looking for a place to eat
@@ -54,32 +60,30 @@
 - I am looking for some restaurants in [Bangalore](location)
 - show me [chinese](cuisine) restaurants
 - show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
-- show me a [mexican](cuisine) place in the [centre](location)
+- show me a [mexican](cuisine) place in the [Pune](location)
 - i am looking for an [indian](cuisine)
 - search for restaurants
 - anywhere in the [west](location)
 - I am looking for [asian fusion](cuisine) food
-- I am looking a restaurant in [294328](location)
+- I am looking a restaurant in [Mysore](location)
 - in [Gurgaon](location)
 - [South Indian](cuisine)
 - [North Indian](cuisine)
 - [Italian](cuisine)
 - [Chinese](cuisine:chinese)
 - [chinese](cuisine)
-- [Lithuania](location)
-- Oh, sorry, in [Italy](location)
+- Oh, sorry, in [Chandigarh](location)
 - in [delhi](location)
 - I am looking for some restaurants in [Mumbai](location)
 - I am looking for [mexican indian fusion](cuisine)
 - can you book a table in [rome](location) in a [moderate](price:mid) price range with [british](cuisine) food for [four](people:4) people
-- [central](location) [indian](cuisine) restaurant
+- [chennai](location) [indian](cuisine) restaurant
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurantin [bangalore](location)
 - [mumbai](location)
 - show me restaurants
 - please find me [chinese](cuisine) restaurant in [delhi](location)
 - can you find me a [chinese](cuisine) restaurant
-- [delhi](location)
 - please find me a restaurant in [ahmedabad](location)
 - please show me a few [italian](cuisine) restaurants in [bangalore](location)
 - [less than 300](price:low)
@@ -94,18 +98,27 @@
 - [in range of 300 to 700](price:mid)
 - [not more than 300](price:low)
 - [not more than 700](price:mid)
-- [mid](price:mid)
-- [low](price:low)
-- [high](price:high)
+- [mid](price)
+- [low](price)
+- [high](price)
 - I need food
 - [Delhi](location)
 - in need food
 - i'm hungry
 - [hyderabad](location)
-- [hyderabad](location)
-- [Italian](cuisine)
-- [mid](price:mid)
 - [300-700 range](price:mid)
+- I’m hungry. Looking out for some good restaurants
+- [bengaluru](location:bangalore)
+- I'm hungry
+- [Mexican](cuisine)
+- Can you suggest some good restaurants in Rishikesh
+- [dehradun](location)
+- Can you suggest some good restaurants in [kolkata](location)
+- [American](cuisine)
+- in mumbaim
+- in [Mumbai](location)
+- I’m hungry. Looking out for some good [chinese](cuisine) restaurants in [chandigarh](location)
+- [<300](price:low)
 
 ## intent:email_id
 - [abc.xyz@gmail.com](email)
@@ -114,15 +127,21 @@
 - [prasad.arun88@gmail.com](email)
 - my email is [prashant.upadhyay1996@gmail.com](email)
 - you can send me mail on [prashant.upadhyay1996@gmail.com](email)
+- [prashant.upadhyay1996@gmail.com](email)
+- [jsdkh.kdjl223@lf.edu.com](email)
+- [sdhjk.djfh@edu.co.in](email)
 
 ## intent:stop
 - bye
 
+## synonym:4
+- four
+
+## synonym:Chennai
+- Madras
+
 ## synonym:Delhi
 - New Delhi
-
-## synonym:bangalore
-- Bengaluru
 
 ## synonym:Gurgaon
 - Gurugram
@@ -130,8 +149,9 @@
 ## synonym:Mumbai
 - Bombay
 
-## synonym:Chennai
-- Madras
+## synonym:bangalore
+- bengaluru
+- Bengaluru
 
 ## synonym:chinese
 - chines
@@ -155,6 +175,7 @@
 - >300
 - in range of 300 to 700
 - not more than 700
+- 300-700 range
 - average
 
 ## regex:email
@@ -167,5 +188,4 @@
 - [0-9]{6}
 
 ## lookup:location
-data/cities/cities.txt
-
+  data/cities/cities.txt

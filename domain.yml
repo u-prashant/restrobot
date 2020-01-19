@@ -10,6 +10,8 @@ actions:
 - utter_default
 - utter_goodbye
 - utter_greet
+- utter_invalid_location
+- utter_mail_sent
 entities:
 - cuisine
 - email
@@ -17,13 +19,13 @@ entities:
 - people
 - price
 intents:
-- goodbye
+- deny
 - restaurant_search
 - greet
-- email_id
 - affirm
+- email_id
+- goodbye
 - stop
-- deny
 slots:
   cuisine:
     type: text
