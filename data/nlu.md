@@ -61,10 +61,10 @@
 - show me [chinese](cuisine) restaurants
 - show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
 - show me a [mexican](cuisine) place in the [Pune](location)
-- i am looking for an [indian](cuisine)
+- i am looking for an [south indian](cuisine)
 - search for restaurants
-- anywhere in the [west](location)
-- I am looking for [asian fusion](cuisine) food
+- anywhere in [nashik](location)
+- I am looking for [italian](cuisine) food
 - I am looking a restaurant in [Mysore](location)
 - in [Gurgaon](location)
 - [South Indian](cuisine)
@@ -75,8 +75,8 @@
 - Oh, sorry, in [Chandigarh](location)
 - in [delhi](location)
 - I am looking for some restaurants in [Mumbai](location)
-- I am looking for [mexican indian fusion](cuisine)
-- can you book a table in [rome](location) in a [moderate](price:mid) price range with [british](cuisine) food for [four](people:4) people
+- I am looking for [mexican](cuisine) food.
+- can you book a table in [lucknow](location) in a [moderate](price:mid) price range with [mexican](cuisine) food.
 - [chennai](location) [indian](cuisine) restaurant
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurantin [bangalore](location)
@@ -131,12 +131,6 @@
 - [jsdkh.kdjl223@lf.edu.com](email)
 - [sdhjk.djfh@edu.co.in](email)
 
-## intent:stop
-- bye
-
-## synonym:4
-- four
-
 ## synonym:Chennai
 - Madras
 
@@ -188,4 +182,4 @@
 - [0-9]{6}
 
 ## lookup:location
-  data/cities/cities.txt
+data/cities/cities.txt

@@ -16,7 +16,6 @@ entities:
 - cuisine
 - email
 - location
-- people
 - price
 intents:
 - deny
@@ -25,7 +24,6 @@ intents:
 - affirm
 - email_id
 - goodbye
-- stop
 slots:
   cuisine:
     type: text
