@@ -30,6 +30,7 @@ class ActionSearchRestaurants(Action):
         start = 0
         response = ""
         restaurants = []
+        gotMaxRestro = False
 
         for i in range(5):
             results = zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), start, 20)
@@ -52,7 +53,11 @@ class ActionSearchRestaurants(Action):
                             restaurants.append(restaurant)
                             count = count + 1
                     if count == 5:
+                        gotMaxRestro = True
                         break
+
+            if gotMaxRestro:
+                break
 
             start = start + 20
 
@@ -86,6 +91,7 @@ class ActionSendMail(Action):
         start = 0
         response = ""
         restaurants = []
+        gotMaxRestro = False
 
         for i in range(10):
             results = zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), start, 20)
@@ -108,7 +114,11 @@ class ActionSendMail(Action):
                             restaurants.append(restaurant)
                             count = count + 1
                     if count == 10:
+                        gotMaxRestro = True
                         break
+
+            if gotMaxRestro:
+                break
 
             start = start + 20
 
