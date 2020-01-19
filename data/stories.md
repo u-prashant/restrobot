@@ -418,3 +418,69 @@
     - action_send_mail
     - slot{"location": "delhi"}
     - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "mumbai"}
+    - slot{"location": "mumbai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "South Indian"}
+    - slot{"cuisine": "South Indian"}
+    - utter_ask_budget
+* restaurant_search{"price": "mid"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "mumbai"}
+    - utter_ask_mail
+* affirm
+    - utter_ask_email_id
+* email_id{"email": "prashant.upadhyay1996@gmail.com"}
+    - slot{"email": "prashant.upadhyay1996@gmail.com"}
+    - action_send_mail
+    - slot{"location": "mumbai"}
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "hyderabad"}
+    - slot{"location": "hyderabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "Italian"}
+    - slot{"cuisine": "Italian"}
+    - utter_ask_budget
+* restaurant_search{"price": "mid"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "hyderabad"}
+    - utter_ask_mail
+* affirm
+    - utter_ask_email_id
+* email_id{"email": "prashant.upadhyay1996@gmail.com"}
+    - slot{"email": "prashant.upadhyay1996@gmail.com"}
+    - action_send_mail
+    - slot{"location": "hyderabad"}
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "hyderabad"}
+    - slot{"location": "hyderabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "Italian"}
+    - slot{"cuisine": "Italian"}
+    - utter_ask_budget
+* restaurant_search{"price": "mid"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "hyderabad"}
+* goodbye
+    - utter_goodbye

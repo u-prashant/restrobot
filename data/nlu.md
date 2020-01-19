@@ -97,18 +97,15 @@
 - [mid](price)
 
 ## intent:email_id
-- [email](email)
-- my email id is [email](email)
-- email - [email](email)
+- [abc.xyz@gmail.com](email)
+- my email id is [lablab@yahoo.com](email)
+- email - [khan@outlook.com](email)
 - [prasad.arun88@gmail.com](email)
 - my email is [prashant.upadhyay1996@gmail.com](email)
 - you can send me mail on [prashant.upadhyay1996@gmail.com](email)
 
 ## intent:stop
 - bye
-
-## synonym:4
-- four
 
 ## synonym:Delhi
 - New Delhi
@@ -140,15 +137,15 @@
 - not more than 700
 - average
 
-## synonym:vegetarian
-- veggie
-- vegg
-
 ## regex:email
-- (b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b)
+- ([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})
 
 ## regex:greet
 - hey[^\s]*
 
 ## regex:pincode
 - [0-9]{6}
+
+## lookup:location
+data/cities/cities.txt
+
