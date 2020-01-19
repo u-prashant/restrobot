@@ -116,6 +116,12 @@
 ## synonym:Gurgaon
 - Gurugram
 
+## synonym:Mumbai
+- Bombay
+
+## synonym:Chennai
+- Madras
+
 ## synonym:chinese
 - chines
 - Chinese
