@@ -118,7 +118,9 @@
 - in mumbaim
 - in [Mumbai](location)
 - I’m hungry. Looking out for some good [chinese](cuisine) restaurants in [chandigarh](location)
-- [<300](price:low)
+- [jaipur](location)
+- [Chinese](cuisine:chinese)
+- [>700](price:high)
 
 ## intent:email_id
 - [abc.xyz@gmail.com](email)
@@ -182,4 +184,4 @@
 - [0-9]{6}
 
 ## lookup:location
-data/cities/cities.txt
+  data/cities/cities.txt

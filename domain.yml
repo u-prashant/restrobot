@@ -18,8 +18,8 @@ entities:
 - location
 - price
 intents:
-- deny
 - restaurant_search
+- deny
 - greet
 - affirm
 - email_id
