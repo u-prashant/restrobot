@@ -32,7 +32,7 @@ class ActionSearchRestaurants(Action):
         restaurants = []
         gotMaxRestro = False
 
-        for i in range(10):
+        for i in range(20):
             results = zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), start, 20)
             d = json.loads(results)
             if d['results_found'] == 0:
@@ -93,7 +93,7 @@ class ActionSendMail(Action):
         restaurants = []
         gotMaxRestro = False
 
-        for i in range(10):
+        for i in range(20):
             results = zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), start, 20)
             d = json.loads(results)
             if d['results_found'] == 0:
