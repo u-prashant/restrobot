@@ -74,3 +74,5 @@ templates:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
+  utter_invalid_location:
+  - text: We do not operate in that area yet.

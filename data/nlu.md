@@ -113,6 +113,9 @@
 ## synonym:bangalore
 - Bengaluru
 
+## synonym:Gurgaon
+- Gurugram
+
 ## synonym:chinese
 - chines
 - Chinese
