@@ -1,29 +1,15 @@
-actions:
-- action_search_restaurants
-- action_send_mail
-- utter_ask_budget
-- utter_ask_cuisine
-- utter_ask_email_id
-- utter_ask_howcanhelp
-- utter_ask_location
-- utter_ask_mail
-- utter_default
-- utter_goodbye
-- utter_greet
-- utter_invalid_location
-- utter_mail_sent
+intents:
+- restaurant_search
+- deny
+- greet
+- email_id
+- affirm
+- goodbye
 entities:
 - cuisine
 - email
 - location
 - price
-intents:
-- restaurant_search
-- deny
-- greet
-- affirm
-- email_id
-- goodbye
 slots:
   cuisine:
     type: text
@@ -80,3 +66,17 @@ templates:
   utter_mail_sent:
   - text: Sent. Bon Appetit!
   - text: Sent.
+actions:
+- action_search_restaurants
+- action_send_mail
+- utter_ask_budget
+- utter_ask_cuisine
+- utter_ask_email_id
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_mail
+- utter_default
+- utter_goodbye
+- utter_greet
+- utter_invalid_location
+- utter_mail_sent

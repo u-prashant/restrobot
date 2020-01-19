@@ -14,6 +14,7 @@
 - thanks
 - yes, please
 - yes. Please
+- yes please
 
 ## intent:deny
 - no
@@ -119,8 +120,12 @@
 - in [Mumbai](location)
 - I’m hungry. Looking out for some good [chinese](cuisine) restaurants in [chandigarh](location)
 - [jaipur](location)
-- [Chinese](cuisine:chinese)
-- [>700](price:high)
+- [surat](location)
+- [Less than 300](price:low)
+- pataudi
+- [gurgaon](location)
+- [Italian](cuisine)
+- [mid](price)
 
 ## intent:email_id
 - [abc.xyz@gmail.com](email)
@@ -132,6 +137,7 @@
 - [prashant.upadhyay1996@gmail.com](email)
 - [jsdkh.kdjl223@lf.edu.com](email)
 - [sdhjk.djfh@edu.co.in](email)
+- [prashantuproject@gmail.com](email)
 
 ## synonym:Chennai
 - Madras
@@ -163,6 +169,7 @@
 - cheap
 - <300
 - not more than 300
+- Less than 300
 
 ## synonym:mid
 - moderate

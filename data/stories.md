@@ -376,7 +376,7 @@
 * greet
     - utter_greet
 * restaurant_search
-    - utter_invalid_location
+    - utter_ask_location
 * restaurant_search{"location": "dehradun"}
     - slot{"location": "dehradun"}
     - utter_ask_cuisine
@@ -469,6 +469,51 @@
     - slot{"price": "high"}
     - action_search_restaurants
     - slot{"location": "jaipur"}
+    - utter_ask_mail
+* deny
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "surat"}
+    - slot{"location": "surat"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "South Indian"}
+    - slot{"cuisine": "South Indian"}
+    - utter_ask_budget
+* restaurant_search{"price": "low"}
+    - slot{"price": "low"}
+    - action_search_restaurants
+    - slot{"location": "surat"}
+    - utter_ask_mail
+* affirm
+    - utter_ask_email_id
+* email_id{"email": "prashantuproject@gmail.com"}
+    - slot{"email": "prashantuproject@gmail.com"}
+    - action_send_mail
+    - slot{"location": "surat"}
+    - utter_mail_sent
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search
+    - utter_invalid_location
+* restaurant_search{"location": "gurgaon"}
+    - slot{"location": "gurgaon"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "Italian"}
+    - slot{"cuisine": "Italian"}
+    - utter_ask_budget
+* restaurant_search{"price": "mid"}
+    - slot{"price": "mid"}
+    - action_search_restaurants
+    - slot{"location": "gurgaon"}
     - utter_ask_mail
 * deny
     - utter_goodbye
