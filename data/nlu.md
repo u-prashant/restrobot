@@ -13,6 +13,16 @@
 - sounds good
 - thanks
 
+## intent:deny
+- no
+- nope
+- no, thanks
+- not
+- don't send
+- don't send email
+- not needed
+- no need
+
 ## intent:goodbye
 - bye
 - goodbye
@@ -84,9 +94,9 @@
 - [in range of 300 to 700](price:mid)
 - [not more than 300](price:low)
 - [not more than 700](price:mid)
-- [mid](price)
-- [low](price)
-- [high](price)
+- [mid](price:mid)
+- [low](price:low)
+- [high](price:high)
 - I need food
 - [Delhi](location)
 - in need food
@@ -94,7 +104,8 @@
 - [hyderabad](location)
 - [hyderabad](location)
 - [Italian](cuisine)
-- [mid](price)
+- [mid](price:mid)
+- [300-700 range](price:mid)
 
 ## intent:email_id
 - [abc.xyz@gmail.com](email)

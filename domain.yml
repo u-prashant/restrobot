@@ -23,6 +23,7 @@ intents:
 - email_id
 - affirm
 - stop
+- deny
 slots:
   cuisine:
     type: text
@@ -75,4 +76,7 @@ templates:
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
   utter_invalid_location:
-  - text: We do not operate in that area yet.
+  - text: We do not operate in that area yet. Try another location.
+  utter_mail_sent:
+  - text: Sent. Bon Appetit!
+  - text: Sent.
