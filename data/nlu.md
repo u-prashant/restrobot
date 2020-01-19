@@ -91,15 +91,18 @@
 - [Delhi](location)
 - in need food
 - i'm hungry
-- [delhi](location)
-- [South Indian](cuisine)
-- [high](price)
+- [hyderabad](location)
+- [hyderabad](location)
+- [Italian](cuisine)
+- [mid](price)
 
 ## intent:email_id
 - [email](email)
 - my email id is [email](email)
 - email - [email](email)
 - [prasad.arun88@gmail.com](email)
+- my email is [prashant.upadhyay1996@gmail.com](email)
+- you can send me mail on [prashant.upadhyay1996@gmail.com](email)
 
 ## intent:stop
 - bye

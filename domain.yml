@@ -17,15 +17,12 @@ entities:
 - people
 - price
 intents:
-- greet
-- restaurant_search
-- affirm
-- email_id
-- stop
 - goodbye
-session_config:
-  carry_over_slots_to_new_session: true
-  session_expiration_time: 0
+- restaurant_search
+- greet
+- email_id
+- affirm
+- stop
 slots:
   cuisine:
     type: text
